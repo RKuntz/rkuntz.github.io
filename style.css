@@ -1,0 +1,46 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.snakeGrid{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.snakeGrid div{
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background-color: steelblue;
+}
+
+.apple {
+    background-color: red;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     let direction = 1;
     let score = 0;
-    let speed = 1.1;
-    let intervalTime = 0;
+    let speed = 0.7;
+    let intervalTime = 1;
     let interval = 0;
 
         const randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         currentIndex=0;
         currentSnake.forEach(index => squares[index].classList.add('snake'));
         interval = setInterval(moveOutcomes, intervalTime);
+        let randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor2;
     }
 
     //all outcomes for the snake
@@ -60,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () =>{
             clearInterval(interval);
             intervalTime = intervalTime * speed;
             interval = setInterval(moveOutcomes, intervalTime);
-            
+            let randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = "#" + randomColor2;
         }
         squares[currentSnake[0]].classList.add('snake');
     }
